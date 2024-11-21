@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.fahkwang {
+  font-family: "Fahkwang", sans-serif;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+.heroBG {
+  background-image: url(img/Rectangle\ 1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .heroBG {
+    background-size: cover;
+    width: 700px;
+    height: 600px;
+  }
+}
+
+.count {
+  animation: scrolling 20s linear infinite;
+}
+/* partner  */
+
+.partners {
+  display: grid;
+  place-items: center;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.4px);
+  -webkit-backdrop-filter: blur(7.4px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.slider-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  animation: scrolling 20s linear infinite;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(80%);
+  }
+
+  100% {
+    transform: translateX(-20%);
+  }
+}
+
+.slider-items img {
+  width: 12%;
+  margin: 10px;
+}

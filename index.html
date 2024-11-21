@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en" data-theme='light'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appeety - Your App's Perfect Landing Page</title>
+
+    <!-- css  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
+    <!-- tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
+    <!-- swipper  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- poppins  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- icon       -->
+    <script src="https://kit.fontawesome.com/9710cf8566.js" crossorigin="anonymous"></script>
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="m-0 p-0 poppins">
+
+    <!-- nav  -->
+    <header class='container mx-auto bg-white 2xl:px-7 xl:px-2 md:px-10 px-5 2xl:py-4  py-3 
+tracking-wide relative'>
+        <div class='flex flex-wrap items-center max-xl:gap-y-6 max-sm:gap-x-4'>
+            <a href="javascript:void(0)" class="text-3xl md:text-md font-bold text-[#4E2FDA] tracking-wide">
+                <div class="flex items-center">
+
+                    <img src="img/Group 52310.png" alt="logo" class="" />
+
+                </div>
+            </a>
+
+            <div id="collapseMenu"
+                class="max-xl:hidden xl:!flex xl:items-center max-xl:before:fixed max-xl:before:bg-black max-xl:before:opacity-40 max-xl:before:inset-0 max-xl:before:z-50">
+                <button id="toggleClose" class='xl:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3'>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-black" viewBox="0 0 320.591 320.591">
+                        <path
+                            d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                            data-original="#000000"></path>
+                        <path
+                            d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                            data-original="#000000"></path>
+                    </svg>
+                </button>
+
+                <ul
+                    class='xl:flex xl:gap-x-10 xl:absolute xl:left-[42%] xl:-translate-x-1/2 max-xl:space-y-3 max-xl:fixed max-xl:bg-white max-xl:w-2/3 max-xl:min-w-[300px] max-xl:top-0 max-xl:left-0 max-xl:px-10 max-xl:py-4 max-xl:h-full max-xl:shadow-md max-xl:overflow-auto z-50'>
+
+
+                    <li class='flex flex-shrink max-xl:border-b max-xl:py-3'>
+                        <a href='#about' class='text-[#292929] hover:text-[#fbbc05]  text-2xl  block font-medium'>
+                            About us</a>
+                    </li>
+                    <li class='flex flex-shrink max-xl:border-b max-xl:py-3'>
+                        <a href='#about' class='text-[#292929] hover:text-[#fbbc05]  text-2xl  block font-medium'>
+                            Community</a>
+                    </li>
+                    <li class='flex flex-shrink max-xl:border-b max-xl:py-3'>
+                        <a href='#about' class='text-[#292929] hover:text-[#fbbc05]  text-2xl  block font-medium'>
+                            Privacy</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class='flex items-center ml-auto space-x-8'>
+
+                <div class="flex gap-2 justify-center items-center">
+                    <!-- App Store Button -->
+                    <div class="sm:w-auto max-w-[50%]">
+                        <a href="https://apps.apple.com" target="_blank"
+                            class="flex md:gap-2 gap-1 items-center md:px-4 px-1 py-1  rounded-xl border-2 border-[#292929] hover:bg-sky-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="sm:w-6 w-5 sm:h-6 h-5 text-[#292929]"
+                                viewBox="0 0 384 512" fill="currentColor">
+                                <path
+                                    d="M318.7 268c-.2-58.4 47.7-86.4 49.8-87.8-27.2-39.7-69.4-45-84.5-45-35.8-3.6-69.9 21-88.1 21-18.2 0-46.4-20.5-76.2-19.9-39 0-75.1 23-95.1 58-40.8 71.1-10.4 176 29.2 233.4 19.4 28.1 42.5 59.6 72.8 58.4 29.4-1.2 40.7-18.9 76.4-18.9 35.7 0 45.5 18.9 76.3 18.4 31.7-.5 51.7-28.8 70.9-57.1 22.4-32.7 31.7-64.5 32.1-66.2-.7-.3-62.2-23.8-62.5-94.6zM261.1 85.3c16.2-19.6 27.1-47 24.2-74.3-23.4.9-51.7 15.7-68.4 35.3-15 17.3-28.2 45.2-24.7 71.5 26.3 2 52.8-13.2 68.9-32.5z" />
+                            </svg>
+
+                            <div class="flex flex-col justify-start items-start">
+                                <span class="md:text-xs text-[10px] text-[#232323]">Download on the </span>
+                                <div class="text-[#292929] font-semibold md:text-base text-xs">App Store</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Google Play Button -->
+                    <div class="sm:w-auto max-w-[50%]">
+                        <a href="https://play.google.com/store" target="_blank"
+                            class="flex md:gap-2 gap-1 items-center md:px-4 px-1 py-1  rounded-xl border-2 border-[#292929] hover:bg-sky-300">
+                            <div><i class="fa-brands fa-google-play text-[#292929]"></i></div>
+
+                            <div class="flex flex-col justify-start items-start">
+                                <span class="md:text-xs text-[10px] text-[#232323]">Download on the </span>
+                                <div class="text-[#292929] font-semibold md:text-base text-xs">Play Store</div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <button id="toggleOpen" class='xl:hidden'>
+                    <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+
+    </header>
+    <main>
+        <!-- banner  -->
+        <section class="container poppins mx-auto lg:py-10 py-5 xl:px-20 lg:px-10 heroBG lg:mb-2 sm:mb-28 mb-28">
+            <div class="flex lg:flex-row flex-col justify-between items-center md:gap-10 gap-5 2xl:px-5 md:px-0 px-5">
+                <div class="space-y-4">
+                    <div
+                        class="bg-[#545ef40f] text-[#fbbc05] hover:text-white hover:bg-[#fbbc05] hover:animate-bounce text-xs font-semibold px-3 py-3 rounded-3xl shadow-lg shadow-[#fbbc05] hover:shadow-gray-400 inline-block">
+                       <a href="https://phonesmashypro.netlify.app/" target="_blank"> Welcome to MyApp</a> 
+                    </div>
+
+                    <h1 class="font-semibold lg:text-6xl sm:text-3xl text-xl text-[#000] poppins max-w-md">Manage your
+                        finance with <span class="text-[#fbbc05]"> Quotient</span> app</h1>
+
+                    <p class="text-[#748795] lg:text-2xl sm:text-base text-xs max-w-md">Lorem ipsum dolor sit amet consectetur. Pulvinar nunc
+                        amet pretium pellentesque.
+                        Ornare in arcu elit quisque iaculis. Nunc enim cursus posuere egestas eu viverra.</p>
+                    <div
+                        class="flex items-center hover:animate-bounce duration-100 transition ease-in-out sm:flex-row flex-col gap-4 sm:gap-10 justify-center lg:justify-start">
+                        <button
+                            class="flex items-center space-x-2 px-4 gap-1 bg-[#fbbc05] text-white font-medium text-sm py-2  rounded-full hover:bg-black transition duration-200">
+                            <span class=""> <a href="https://www.lipsum.com/">Get Started</a></span>
+
+                        </button>
+                        <div class="relative inline-flex items-center space-x-2">
+                            <div class="absolute w-10 h-10 left-2 top-2"></div>
+                            <button class="relative  bg-[#fbbc05]  text-white flex items-center px-1 py-1 rounded-full">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                            </button>
+                            <span class="text-[#fbbc05] text-lg font-medium">How it works</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex lg:justify-end justify-center">
+                    <img src="img/hero.png" alt="" class="2xl:w-full xl:w-11/12 lg:w-3/4 w-1/2">
+                </div>
+            </div>
+        </section>
+        <!-- works  -->
+        <section class="container mx-auto relative px-10 xl:my-20 lg:my-10 my-10 space-y-6">
+            <div class="mx-auto space-y-4">
+                <h1 class="lg:text-5xl sm:text-3xl text-xl font-semibold text-[#1e194d] text-center">How it works</h1>
+                <p class="text-[ #9e9baa] text-center max-w-md mx-auto sm:text-base text-xs">Lorem ipsum dolor sit amet consectetur. Pulvinar
+                    nunc amet pretium pellentesque. Ornare
+                    in arcu elit quisque.</p>
+
+            </div>
+
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+
+                <!-- Step 1 -->
+                <div class="text-center md:w-1/3">
+                    <div class="flex z-10 items-center justify-center mb-4">
+                        <span
+                            class="bg-[#ffe3e5] text-pink-700 font-bold rounded-full w-12 h-12 flex items-center justify-center text-xl z-10">1</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800">Install The App</h3>
+                    <p class="text-gray-500 text-sm mt-2">
+                        Lorem ipsum dolor sit amet consectetur. Pulvinar nunc amet pretium pellentesque. Ornare in arcu
+                        elit.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center md:w-1/3">
+                    <div class="flex items-center justify-center mb-4">
+                        <span
+                            class="bg-[#ffe3e5] text-pink-700 font-bold rounded-full w-12 h-12 flex items-center justify-center text-xl z-10">2</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800">Link Your Bank Account</h3>
+                    <p class="text-gray-500 text-sm mt-2">
+                        Lorem ipsum dolor sit amet consectetur. Pulvinar nunc amet pretium pellentesque. Ornare in arcu
+                        elit.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center md:w-1/3">
+                    <div class="flex z-10 items-center justify-center mb-4">
+                        <span
+                            class="bg-[#ffe3e5] text-pink-700 font-bold rounded-full w-12 h-12 flex items-center justify-center text-xl z-10">3</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800">Link Your Bank Account</h3>
+                    <p class="text-gray-500 text-sm mt-2">
+                        Lorem ipsum dolor sit amet consectetur. Pulvinar nunc amet pretium pellentesque. Ornare in arcu
+                        elit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="absolute 2xl:left-64 xl:left-52 lg:left-44 lg:flex hidden lg:top-[135px] h-1 w-[65%] border-1 border-b border-[#c2c0c8] border-dashed px-60 xl:mx-7 mx-auto">
+            </div>
+        </section>
+        <!-- Quick  -->
+        <section class="container mx-auto md:px-10 px-5 lg:my-28 my-16 lg:pt-2 pt-10 space-y-6">
+            <div class="flex lg:flex-row flex-col md:gap-20 gap-10 lg:justify-between justify-center items-center 2xl:gap-10 xl:gap-40 ">
+                <div class="relative">
+                    <div class="absolute -top-12 left-8"> <img src="img/Group 48095447.png" alt=""></div>
+
+                    <div class="bg-[#fbbc05] xl:w-[550px] xl:h-[550px] sm:w-[450px] sm:h-[450px] min-[425px]:w-72 min-[425px]:h-72 w-64 h-64 rounded-b-full rounded-tr-full">
+
+                    </div>
+                    <div class="absolute xl:top-[25%] xl:left-28 lg:left-20 lg:top-[16%] sm:left-24 min-[425px]:left-16 sm:top-[24%] min-[425px]:top-[28%] top-[28%] left-14 rounded-b-full"><img src="img/13 Pro.png" alt=""
+                            class="rounded-b-[100px] xl:w-full lg:w-11/12 sm:w-10/12 w-3/4">
+                    </div>
+                </div>
+                <div class="space-y-8 lg:text-left text-center">
+                    <h1 class="xl:text-5xl sm:text-3xl text-xl font-semibold text-[#1e194d] xl:max-w-xl sm:max-w-sm max-w-52 capitalize">
+                        Quick and easy payments with just a few clicks
+                    </h1>
+                    <p class="text-[#9e9baa] xl:text-2xl sm:text-base text-xs xl:max-w-2xl sm:max-w-sm max-w-52 mx-auto">
+                        Lorem ipsum dolor sit amet consectetur. Pulvinar nunc amet pretium pellentesque.
+                        Ornare in arcu elit quisque.</p>
+                    <button
+                        class="flex items-center lg:mx-1 mx-auto space-x-2 px-4 gap-1 bg-[#fbbc05] text-white font-medium text-sm py-2  rounded-full hover:bg-[#ffe3e5] hover:text-pink-600 transition duration-200">
+                        <span class=""> <a href="https://www.lipsum.com/">1 days free trial</a></span>
+
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Q2  -->
+        <section class="container mx-auto md:px-10 px-5 lg:my-28 my-16 space-y-6">
+            <div class="flex lg:flex-row flex-col-reverse md:gap-20 gap-10 lg:justify-between justify-center items-center 2xl:gap-10 xl:gap-40">
+                <div class="space-y-8 lg:text-left text-center">
+                    <h1 class="xl:text-5xl sm:text-3xl text-xl font-semibold text-[#1e194d] xl:max-w-xl sm:max-w-sm max-w-52 capitalize">
+                        Quick and easy payments with just a few clicks
+                    </h1>
+                    <p class="text-[#9e9baa] xl:text-2xl sm:text-base text-xs xl:max-w-2xl sm:max-w-sm max-w-52 mx-auto">
+                        Lorem ipsum dolor sit amet consectetur. Pulvinar nunc amet pretium pellentesque.
+                        Ornare in arcu elit quisque.</p>
+                    <button
+                        class="flex items-center lg:mx-1 mx-auto space-x-2 px-4 gap-1 bg-[#fbbc05] text-white font-medium text-sm py-2  rounded-full hover:bg-[#ffe3e5] hover:text-pink-600 transition duration-200">
+                        <span class=""> <a href="https://www.lipsum.com/">1 days free trial</a></span>
+
+                    </button>
+                </div>
+                <div class="relative">
+                    <div class="absolute sm:top-14 top-0 xl:right-7 sm:right-2 -right-2 z-20"> <img src="img/btrfly.png" alt=""></div>
+
+                    <div class="bg-[#fbafb1] xl:w-[550px] xl:h-[550px] sm:w-[450px] sm:h-[450px] min-[425px]:w-72 min-[425px]:h-72 w-64 h-64 rounded-t-full rounded-bl-full">
+
+                    </div>
+                    <div class="absolute xl:top-[33%] lg:top-28 sm:top-[145px] min-[425px]:top-24 sm:left-20 left-16 top-[36%] rounded-b-full"><img src="img/ip2.png" alt=""
+                            class="rounded-bl-[40%] xl:w-full lg:w-11/12 sm:w-10/12 w-3/4">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- count  -->
+        <section class="container mx-auto partners xl:my-20 my-10">
+            
+            <div class="slider bg-[#ffe3e5] py-10">
+                <div class="slider-items">
+                   
+                        <div class="text-center w-52 ">
+                            <p class="text-4xl font-semibold text-[#ff5771]">10,000+</p>
+                            <p class="text-[#9e9baa] font-medium text-xl">Active User</p>
+                        </div>
+                        <div class="text-center w-52 ">
+                            <p class="text-4xl font-semibold text-[#ff5771]">88K</p>
+                            <p class="text-[#9e9baa] font-medium text-xl">User Passive</p>
+                        </div>
+                        <div class="text-center w-52 ">
+                            <p class="text-4xl font-semibold text-[#ff5771]">30%</p>
+                            <p class="text-[#9e9baa] font-medium text-xl">Increase in User</p>
+                        </div>
+                        <div class="text-center w-52 ">
+                            <p class="text-4xl font-semibold text-[#ff5771]">2k</p>
+                            <p class="text-[#9e9baa] font-medium text-xl">Testimonials</p>
+                        </div>
+                        <div class="text-center w-52 ">
+                            <p class="text-4xl font-semibold text-[#ff5771]">10,000+</p>
+                            <p class="text-[#9e9baa] font-medium text-xl">Active User</p>
+                        </div>
+                        <div class="text-center w-52 ">
+                            <p class="text-4xl font-semibold text-[#ff5771]">88K</p>
+                            <p class="text-[#9e9baa] font-medium text-xl">User Passive</p>
+                        </div>
+                        <div class="text-center w-52 ">
+                            <p class="text-4xl font-semibold text-[#ff5771]">30%</p>
+                            <p class="text-[#9e9baa] font-medium text-xl">Increase in User</p>
+                        </div>
+                        <div class="text-center w-52 ">
+                            <p class="text-4xl font-semibold text-[#ff5771]">2k</p>
+                            <p class="text-[#9e9baa] font-medium text-xl">Testimonials</p>
+                        </div>
+                        <div class="text-center w-52 ">
+                            <p class="text-4xl font-semibold text-[#ff5771]">10,000+</p>
+                            <p class="text-[#9e9baa] font-medium text-xl">Active User</p>
+                        </div>
+                        <div class="text-center w-52 ">
+                            <p class="text-4xl font-semibold text-[#ff5771]">88K</p>
+                            <p class="text-[#9e9baa] font-medium text-xl">User Passive</p>
+                        </div>
+                        <div class="text-center w-52 ">
+                            <p class="text-4xl font-semibold text-[#ff5771]">30%</p>
+                            <p class="text-[#9e9baa] font-medium text-xl">Increase in User</p>
+                        </div>
+                        <div class="text-center w-52 ">
+                            <p class="text-4xl font-semibold text-[#ff5771]">2k</p>
+                            <p class="text-[#9e9baa] font-medium text-xl">Testimonials</p>
+                        </div>
+                        
+                   </div>
+            </div>
+
+        </section>
+      
+        <!-- Q3  -->
+        <section class="container mx-auto md:px-10 px-5 lg:my-28 my-16 lg:pt-1 pt-10 space-y-6">
+            <div class="flex lg:flex-row flex-col md:gap-20 gap-10 lg:justify-between justify-center items-center 2xl:gap-10 xl:gap-48 ">
+                <div class="relative">
+                    <div class="absolute xl:-top-5 sm:right-5 sm:-top-10 -right-2 -top-20 z-20"> <img src="img/g3.png" alt=""> </div>
+
+                    <div class="bg-[#fcb0f0] xl:w-[550px] xl:h-[550px] sm:w-[450px] sm:h-[450px] min-[425px]:w-72 min-[425px]:h-72 w-64 h-64 rounded-b-full rounded-tr-full">
+
+                    </div>
+                    <div class="absolute hover:animate-bounce transition duration-75 xl:top-[15%] xl:left-16 lg:left-10 lg:top-[10%] sm:left-14 min-[425px]:left-8 sm:top-[10%] min-[425px]:top-[17%] top-[16%] left-8 rounded-b-full">
+                        <img src="img/i4.png" alt=""
+                            class="rounded-b-[100px] xl:w-full lg:w-11/12 sm:w-10/12 w-3/4">
+                    </div>
+                    <div class="absolute hover:animate-bounce transition duration-75 xl:top-[25%] xl:left-28 lg:left-20 lg:top-[16%] sm:left-24 min-[425px]:left-16 sm:top-[24%] min-[425px]:top-[29%] top-[28%] left-14 rounded-b-full">
+                        <img src="img/i4.png" alt=""
+                        class="rounded-b-[100px] xl:w-full lg:w-11/12 sm:w-10/12 w-3/4"> 
+                        
+                </div>
+                </div>
+                <div class="max-w-lg flex flex-col items-center lg:items-start">
+                    <h2 class="xl:text-5xl sm:text-3xl text-xl text-center lg:text-left font-semibold text-[#1e194d] xl:max-w-lg sm:max-w-80 max-w-52">
+                        Some Excellent Features For You</h2>
+
+                    <div class="mt-12">
+                        <div class="flex lg:flex-row flex-col lg:gap-2 gap-5 mb-4 lg:items-start mx-auto lg:text-left text-center">
+                            <div class="lg:mx-0 mx-auto"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.93206 4.28572C4.07958 4.28572 3.26201 4.62437 2.65922 5.22716C2.05642 5.82996 1.71777 6.64753 1.71777 7.50001V8.14286H22.2858V7.50001C22.2858 6.64753 21.9471 5.82996 21.3443 5.22716C20.7415 4.62437 19.924 4.28572 19.0715 4.28572H4.93206ZM1.71777 16.5V9.42858H22.2858V16.5C22.2858 17.3525 21.9471 18.1701 21.3443 18.7729C20.7415 19.3756 19.924 19.7143 19.0715 19.7143H4.93292C4.08043 19.7143 3.26287 19.3756 2.66007 18.7729C2.05728 18.1701 1.71863 17.3525 1.71863 16.5M15.6429 14.1429C15.4724 14.1429 15.3089 14.2106 15.1883 14.3312C15.0678 14.4517 15.0001 14.6152 15.0001 14.7857C15.0001 14.9562 15.0678 15.1197 15.1883 15.2403C15.3089 15.3608 15.4724 15.4286 15.6429 15.4286H18.6429C18.8134 15.4286 18.9769 15.3608 19.0975 15.2403C19.218 15.1197 19.2858 14.9562 19.2858 14.7857C19.2858 14.6152 19.218 14.4517 19.0975 14.3312C18.9769 14.2106 18.8134 14.1429 18.6429 14.1429H15.6429Z"
+                                    fill="#1E194D" />
+                            </svg></div>
+
+                            <div class="ml-4 max-w-80 space-y-1">
+                                <h3 class="text-lg font-bold">Bill Payment</h3>
+                                <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur. Pulvinar nunc amet
+                                    pretium pellentesque.</p>
+                            </div>
+                        </div>
+                        <!-- 2  -->
+                        <div class="flex lg:flex-row flex-col lg:gap-2 gap-5 mb-4 lg:items-start mx-auto lg:text-left text-center">
+                            <div class="lg:mx-0 mx-auto">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.75 18.6234V22.5C21.75 22.6989 21.671 22.8897 21.5303 23.0303C21.3897 23.171 21.1989 23.25 21 23.25C20.8011 23.25 20.6103 23.171 20.4697 23.0303C20.329 22.8897 20.25 22.6989 20.25 22.5V18.6234C20.2465 17.6608 20.0449 16.7091 19.6579 15.8277C19.2708 14.9463 18.7065 14.1539 18 13.5V18.9703C17.9999 19.1317 17.9477 19.2888 17.8512 19.4181C17.7546 19.5475 17.619 19.6423 17.4643 19.6884C17.3096 19.7345 17.1442 19.7295 16.9926 19.6741C16.841 19.6187 16.7113 19.5159 16.6228 19.3809L15.6216 17.8519C15.6141 17.8406 15.6066 17.8284 15.6 17.8162C15.4529 17.5565 15.2087 17.3659 14.9211 17.2863C14.6334 17.2066 14.326 17.2445 14.0662 17.3916C13.8065 17.5386 13.6159 17.7828 13.5363 18.0705C13.4566 18.3581 13.4945 18.6656 13.6416 18.9253L15.7162 22.0931C15.8252 22.2596 15.8635 22.4625 15.8228 22.6572C15.7821 22.8519 15.6657 23.0225 15.4992 23.1314C15.3328 23.2403 15.1298 23.2786 14.9351 23.2379C14.7404 23.1972 14.5698 23.0808 14.4609 22.9144L12.3741 19.7269L12.3516 19.6912C12.0285 19.1376 11.9192 18.485 12.0442 17.8563C12.1692 17.2277 12.5199 16.6665 13.0301 16.2786C13.5404 15.8906 14.175 15.7028 14.8141 15.7505C15.4533 15.7982 16.053 16.0781 16.5 16.5375V6H15C14.8011 6 14.6103 5.92098 14.4697 5.78033C14.329 5.63968 14.25 5.44891 14.25 5.25C14.25 5.05109 14.329 4.86032 14.4697 4.71967C14.6103 4.57902 14.8011 4.5 15 4.5H16.5C16.8978 4.5 17.2794 4.65803 17.5607 4.93934C17.842 5.22064 18 5.60217 18 6V11.5894C19.1512 12.3673 20.0946 13.4149 20.7482 14.6409C21.4018 15.8669 21.7458 17.2341 21.75 18.6234ZM8.25 5.25C8.25 5.05109 8.17098 4.86032 8.03033 4.71967C7.88968 4.57902 7.69891 4.5 7.5 4.5H6C5.60218 4.5 5.22064 4.65803 4.93934 4.93934C4.65804 5.22064 4.5 5.60217 4.5 6V18.75C4.5 18.9489 4.57902 19.1397 4.71967 19.2803C4.86032 19.421 5.05109 19.5 5.25 19.5C5.44891 19.5 5.63968 19.421 5.78033 19.2803C5.92098 19.1397 6 18.9489 6 18.75V6H7.5C7.69891 6 7.88968 5.92098 8.03033 5.78033C8.17098 5.63968 8.25 5.44891 8.25 5.25ZM14.7806 9.21937C14.711 9.14964 14.6283 9.09432 14.5372 9.05658C14.4462 9.01884 14.3486 8.99941 14.25 8.99941C14.1514 8.99941 14.0538 9.01884 13.9628 9.05658C13.8717 9.09432 13.789 9.14964 13.7194 9.21937L12 10.9397V1.5C12 1.30109 11.921 1.11032 11.7803 0.96967C11.6397 0.829018 11.4489 0.75 11.25 0.75C11.0511 0.75 10.8603 0.829018 10.7197 0.96967C10.579 1.11032 10.5 1.30109 10.5 1.5V10.9397L8.78063 9.21937C8.63989 9.07864 8.44902 8.99958 8.25 8.99958C8.05098 8.99958 7.86011 9.07864 7.71937 9.21937C7.57864 9.3601 7.49958 9.55098 7.49958 9.75C7.49958 9.94902 7.57864 10.1399 7.71937 10.2806L10.7194 13.2806C10.789 13.3504 10.8717 13.4057 10.9628 13.4434C11.0538 13.4812 11.1514 13.5006 11.25 13.5006C11.3486 13.5006 11.4462 13.4812 11.5372 13.4434C11.6283 13.4057 11.711 13.3504 11.7806 13.2806L14.7806 10.2806C14.8504 10.211 14.9057 10.1283 14.9434 10.0372C14.9812 9.94616 15.0006 9.84856 15.0006 9.75C15.0006 9.65144 14.9812 9.55384 14.9434 9.46279C14.9057 9.37175 14.8504 9.28903 14.7806 9.21937Z"
+                                    fill="#1E194D" />
+                            </svg>
+                        </div>
+
+                            <div class="ml-4 max-w-80 space-y-1">
+                                <h3 class="text-lg font-bold">Withdraw Money</h3>
+                                <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur. Pulvinar nunc amet
+                                    pretium pellentesque.</p>
+                            </div>
+                        </div>
+                          <!-- 3  -->
+                          <div class="flex lg:flex-row flex-col lg:gap-2 gap-5 mb-4 lg:items-start mx-auto lg:text-left text-center">
+                            <div class="lg:mx-0 mx-auto">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4 12H20V8H4V12ZM19 22V19H16V17H19V14H21V17H24V19H21V22H19ZM4 20C3.45 20 2.97933 19.8043 2.588 19.413C2.19667 19.0217 2.00067 18.5507 2 18V6C2 5.45 2.196 4.97933 2.588 4.588C2.98 4.19667 3.45067 4.00067 4 4H20C20.55 4 21.021 4.196 21.413 4.588C21.805 4.98 22.0007 5.45067 22 6V12H19C17.6167 12 16.4377 12.4877 15.463 13.463C14.4883 14.4383 14.0007 15.6173 14 17V20H4Z"
+                                    fill="#1E194D" />
+                            </svg>
+                        </div>
+
+                            <div class="ml-4 max-w-80 space-y-1">
+                                <h3 class="text-lg font-bold">Add Card</h3>
+                                <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur. Pulvinar nunc amet
+                                    pretium pellentesque.</p>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="flex lg:flex-row flex-col lg:gap-2 gap-5 mb-4 lg:items-start mx-auto lg:text-left text-center">
+                            <div class="lg:mx-0 mx-auto">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.75403 5C4.75947 5 3.80564 5.39509 3.10238 6.09835C2.39912 6.80161 2.00403 7.75544 2.00403 8.75V9.5H26V8.75C26 7.75544 25.6049 6.80161 24.9017 6.09835C24.1984 5.39509 23.2446 5 22.25 5H5.75403ZM2.00403 19.25V11H26V19.25C26 20.2446 25.6049 21.1984 24.9017 21.9017C24.1984 22.6049 23.2446 23 22.25 23H5.75503C4.76047 23 3.80664 22.6049 3.10338 21.9017C2.40012 21.1984 2.00503 20.2446 2.00503 19.25M18.25 16.5C18.0511 16.5 17.8604 16.579 17.7197 16.7197C17.579 16.8603 17.5 17.0511 17.5 17.25C17.5 17.4489 17.579 17.6397 17.7197 17.7803C17.8604 17.921 18.0511 18 18.25 18H21.75C21.9489 18 22.1397 17.921 22.2804 17.7803C22.421 17.6397 22.5 17.4489 22.5 17.25C22.5 17.0511 22.421 16.8603 22.2804 16.7197C22.1397 16.579 21.9489 16.5 21.75 16.5H18.25Z"
+                                    fill="#1E194D" />
+                            </svg>
+                        </div>
+
+                            <div class="ml-4 max-w-80 space-y-1">
+                                <h3 class="text-lg font-bold">QR Payment</h3>
+                                <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur. Pulvinar nunc amet
+                                    pretium pellentesque.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <!-- platform  -->
+        <section class="container mx-auto bg-[#FFEFEF] pt-10  px-10 xl:my-20 my-10 space-y-6">
+            <div class="container mx-auto px-4 flex lg:flex-row flex-col justify-between gap-10">
+                <div class="flex-1 space-y-7 pb-10">
+                    <div class="md:text-left text-center  space-y-7">
+                        <h2 class="xl:text-5xl sm:text-3xl text-xl font-semibold text-[#1e194d] max-w-lg">Platform To Make It Easier For Users
+                        </h2>
+                        <p class="xl:text-2xl text-base text-[#9e9baa]">Lorem ipsum dolor sit amet consectetur. Pulvinar nunc amet
+                            pretium pellentesque. Ornare in arcu elit quisque.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 xl:gap-8 gap-4">
+                        <div class="bg-white p-8 rounded-lg shadow-lg">
+                            <h3 class="xl:text-2xl text-xl font-bold mb-4">Checkout</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur. Pulvinar nunc amet pretium pellentesque.</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-lg shadow-lg">
+                            <h3 class="xl:text-2xl text-xl font-bold mb-4">Integration</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur. Pulvinar nunc amet pretium pellentesque.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="xl:flex-1 flex lg:justify-end justify-center  xl:mr-10 mr-5 mb-0 mt-auto">
+                    <img src="img/iPhone-14.png" alt="Mobile Image" class="pb-0 xl:h-auto xl:w-1/2 lg:w-11/12 w-1/2 h-4/5">
+                </div>
+            </div>
+        </section>
+        <!-- Partners  -->
+        <section class="container mx-auto partners xl:my-20 my-10">
+            <h1 class="xl:text-5xl sm:text-3xl text-xl font-semibold text-[#1e194d] max-w-sm text-center mb-7">See our Trusted
+                partners</h1>
+            <div class="slider bg-[#fbafb1]">
+                <div class="slider-items">
+                    <img src="img/luminous.png" alt="" class="shadow-2xl">
+                    <img src="img/Trace.png" alt="" class="shadow-2xl">
+                    <img src="img/U-Turn.jpg" alt="" class="shadow-2xl">
+                    <img src="img/Dune.png" alt="" class="shadow-2xl">
+                    <img src="img/u.svg" alt="" class="shadow-2xl">
+                    <img src="img/Inspire.svg" alt="" class="shadow-2xl">
+                    <img src="https://www.zarla.com/images/nike-logo-2400x2400-20220504.png?crop=1:1,smart&width=150&dpr=2"
+                        alt="">
+                    <img src="https://www.zarla.com/images/apple-logo-2400x2400-20220512-1.png?crop=1:1,smart&width=150&dpr=2"
+                        alt="">
+                    <img src="https://www.zarla.com/images/disney-logo-2400x2400-20220513-2.png?crop=1:1,smart&width=150&dpr=2"
+                        alt="">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Loon_%28company%29_logo.svg/800px-Loon_%28company%29_logo.svg.png"
+                        alt="">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Jumpman_logo.svg/1200px-Jumpman_logo.svg.png"
+                        alt="">
+                    <img src="https://www.svgrepo.com/show/303123/bmw-logo.svg" alt="">
+
+                    <img src="https://www.zarla.com/images/nike-logo-2400x2400-20220504.png?crop=1:1,smart&width=150&dpr=2"
+                        alt="">
+                    <img src="https://www.zarla.com/images/apple-logo-2400x2400-20220512-1.png?crop=1:1,smart&width=150&dpr=2"
+                        alt="">
+                    <img src="https://www.zarla.com/images/disney-logo-2400x2400-20220513-2.png?crop=1:1,smart&width=150&dpr=2"
+                        alt="">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Loon_%28company%29_logo.svg/800px-Loon_%28company%29_logo.svg.png"
+                        alt="">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Jumpman_logo.svg/1200px-Jumpman_logo.svg.png"
+                        alt="">
+                    <img src="https://www.svgrepo.com/show/303123/bmw-logo.svg" alt="">
+                    <img src="https://brandlogos.net/wp-content/uploads/2014/12/starbucks_coffee_company-logo_brandlogos.net_9jqys.png"
+                        alt="">
+
+
+                </div>
+            </div>
+
+        </section>
+        <!-- customer  -->
+        <section class="container mx-auto md:px-10 px-5 xl:my-20 my-10 space-y-6">
+            <!-- title  -->
+            <div class="text-center poppins mb-8">
+                <h2 class="xl:text-4xl sm:text-3xl text-xl  font-bold text-[#1e194d]">Our best customers</h2>
+                <div class="mt-1 w-16 h-1 bg-[#1e194d] mx-auto"></div>
+              </div>
+              
+            <!-- slide  -->
+        <swiper-container loop="true" class="mySwiper" pagination-clickable="true" space-between="130"
+        slides-per-view="1" px-2>
+        <!-- 1 -->
+        <swiper-slide>
+          <div class="slider-client bg-white md:p-6 p-3">
+            
+    <!-- Testimonial Section -->
+    <div class="flex flex-col md:flex-row items-center justify-between xl:gap-40 gap-10">
+      <!-- Speech Bubble -->
+       <div class="flex-1">
+      <div class="relative bg-[#3b50df] text-white md:text-2xl text-base font-medium poppins px-6 py-4 rounded-lg max-w-lg shadow-lg  2xl:-mb-7">
+        <span>I love these games!</span>
+        <!-- Bubble Pointer -->
+        <div class="absolute w-0 h-0 border-t-[15px] border-t-[#3b50df] border-l-[15px] border-l-transparent border-r-[15px] border-r-transparent -bottom-3 right-6"></div>
+        
+      </div>
+      <div class="flex md:justify-end justify-center">
+      <img class="rounded-full shadow-lg 2xl:max-w-40 max-w-28" src="img/Avator.png" alt="User">
+    </div>
+    </div>
+      <!-- User Info -->
+      <div class="flex flex-col space-y-2 flex-1">
+       
+        <p class="text-[#9e9baa] sm:text-base text-xs md:text-left text-center font-medium poppins">
+            Recusandae sunt voluptate repellat velit dolorem eos nostrum cupiditate. Labore porro cupiditate reiciendis enim neque. Modi eos autem expedita voluptatibus dignissimos repellat. 
+
+ <br> <br>  Sit et aut minus quod vitae. Aut occaecati cupiditate neque dolore amet beatae quasi aliquam.
+            </p>
+      </div>
+    </div>
+          </div>
+        </swiper-slide>
+        <!-- 2 -->
+        <swiper-slide>
+            <div class="slider-client bg-white md:p-6 p-3">
+            
+                <!-- Testimonial Section -->
+                <div class="flex flex-col md:flex-row items-center justify-between xl:gap-40 gap-10">
+                  <!-- Speech Bubble -->
+                   <div class="flex-1">
+                  <div class="relative bg-[#fcb0f0] text-white md:text-2xl text-base font-medium poppins px-6 py-4 rounded-lg max-w-lg shadow-lg  2xl:-mb-7">
+                    <span>I love these games!</span>
+                    <!-- Bubble Pointer -->
+                    <div class="absolute w-0 h-0 border-t-[15px] border-t-[#fcb0f0] border-l-[15px] border-l-transparent border-r-[15px] border-r-transparent -bottom-3 right-6"></div>
+                    
+                  </div>
+                  <div class="flex md:justify-end justify-center">
+                  <img class="rounded-full shadow-lg 2xl:max-w-40 max-w-28" src="img/Avator.png" alt="User">
+                </div>
+                </div>
+                  <!-- User Info -->
+                  <div class="flex flex-col space-y-2 flex-1">
+                   
+                    <p class="text-[#9e9baa] sm:text-base text-xs md:text-left text-center font-medium poppins">
+                        Recusandae sunt voluptate repellat velit dolorem eos nostrum cupiditate. Labore porro cupiditate reiciendis enim neque. Modi eos autem expedita voluptatibus dignissimos repellat. 
+            
+             <br> <br>  Sit et aut minus quod vitae. Aut occaecati cupiditate neque dolore amet beatae quasi aliquam.
+                        </p>
+                  </div>
+                </div>
+                      </div>
+        </swiper-slide>
+        <!-- 3 -->
+        <swiper-slide>
+            <div class="slider-client bg-white md:p-6 p-3">
+            
+                <!-- Testimonial Section -->
+                <div class="flex flex-col md:flex-row items-center justify-between xl:gap-40 gap-10">
+                  <!-- Speech Bubble -->
+                   <div class="flex-1">
+                  <div class="relative bg-[#3b50df] text-white md:text-2xl text-base font-medium poppins px-6 py-4 rounded-lg max-w-lg shadow-lg  2xl:-mb-7">
+                    <span>I love these games!</span>
+                    <!-- Bubble Pointer -->
+                    <div class="absolute w-0 h-0 border-t-[15px] border-t-[#3b50df] border-l-[15px] border-l-transparent border-r-[15px] border-r-transparent -bottom-3 right-6"></div>
+                    
+                  </div>
+                  <div class="flex md:justify-end justify-center">
+                  <img class="rounded-full shadow-lg 2xl:max-w-40 max-w-28" src="img/Avator.png" alt="User">
+                </div>
+                </div>
+                  <!-- User Info -->
+                  <div class="flex flex-col space-y-2 flex-1">
+                   
+                    <p class="text-[#9e9baa] sm:text-base text-xs md:text-left text-center font-medium poppins">
+                        Recusandae sunt voluptate repellat velit dolorem eos nostrum cupiditate. Labore porro cupiditate reiciendis enim neque. Modi eos autem expedita voluptatibus dignissimos repellat. 
+            
+             <br> <br>  Sit et aut minus quod vitae. Aut occaecati cupiditate neque dolore amet beatae quasi aliquam.
+                        </p>
+                  </div>
+                </div>
+                      </div>
+        </swiper-slide>
+        <!-- 4 -->
+        <swiper-slide>
+            <div class="slider-client bg-white md:p-6 p-3">
+            
+                <!-- Testimonial Section -->
+                <div class="flex flex-col md:flex-row items-center justify-between xl:gap-40 gap-10">
+                  <!-- Speech Bubble -->
+                   <div class="flex-1">
+                  <div class="relative bg-[#fcb0f0] text-white md:text-2xl text-base font-medium poppins px-6 py-4 rounded-lg max-w-lg shadow-lg  2xl:-mb-7">
+                    <span>I love these games!</span>
+                    <!-- Bubble Pointer -->
+                    <div class="absolute w-0 h-0 border-t-[15px] border-t-[#fcb0f0] border-l-[15px] border-l-transparent border-r-[15px] border-r-transparent -bottom-3 right-6"></div>
+                    
+                  </div>
+                  <div class="flex md:justify-end justify-center">
+                  <img class="rounded-full shadow-lg 2xl:max-w-40 max-w-28" src="img/Avator.png" alt="User">
+                </div>
+                </div>
+                  <!-- User Info -->
+                  <div class="flex flex-col space-y-2 flex-1">
+                   
+                    <p class="text-[#9e9baa] sm:text-base text-xs md:text-left text-center font-medium poppins">
+                        Recusandae sunt voluptate repellat velit dolorem eos nostrum cupiditate. Labore porro cupiditate reiciendis enim neque. Modi eos autem expedita voluptatibus dignissimos repellat. 
+            
+             <br> <br>  Sit et aut minus quod vitae. Aut occaecati cupiditate neque dolore amet beatae quasi aliquam.
+                        </p>
+                  </div>
+                </div>
+                      </div>
+        </swiper-slide>
+
+      </swiper-container>
+
+        </section>
+         <!-- Pricing Plan  -->
+    <section id="price" class="md:px-10 px-5 xl:my-20 my-10">
+        <div class="py-7">
+          <div class="text-center space-y-3 mb-7 md:mb-10">
+            <h2 class="xl:text-5xl sm:text-3xl text-xl font-semibold text-[#1e194d]">
+                Choose the Best plan
+            </h2>
+            <p class="flex gap-3 justify-center">Pay monthly <span><img src="img/ion_toggle.png" alt=""></span>Pay Yearly </p>
+             </div>
+          <div class="mx-auto">
+            <div class="flex lg:flex-row flex-col justify-center items-center lg:mx-auto gap-6">
+              <!-- 1 -->
+              <div class="shadow-md hover:shadow-2xl rounded sm:px-16 px-5 sm:py-8 py-5 mb-4 max-w-md space-y-4 mx-auto xl:ml-40 lg:ml-10 lg:mr-5">
+                <div class="flex justify-between">
+                  <h2 class="sm:text-4xl text-xl text-[#1e194d] font-semibold mb-2">Free</h2>
+                  <p class="text-[#1e194d] sm:text-xl text-base font-medium mb-6">Starter
+                    </p>
+  
+                </div>
+                
+                <div class="bg-white flex justify-center lg:justify-start">
+                 
+                  <ul class="space-y-3">
+                    <li class="flex gap-2 text-[#9e9baa] sm:text-2xl text-base">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 12.5L4.5 10L9.5 15L19.5 5L22 7.5L9.5 20L2 12.5Z" stroke="#9E9BAA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                      Online Transactions</li>
+                      <li class="flex gap-2 text-[#9e9baa] sm:text-2xl text-base">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 12.5L4.5 10L9.5 15L19.5 5L22 7.5L9.5 20L2 12.5Z" stroke="#9E9BAA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                      Online Transactions</li>
+                      <li class="flex gap-2 text-[#9e9baa] sm:text-2xl text-base">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 12.5L4.5 10L9.5 15L19.5 5L22 7.5L9.5 20L2 12.5Z" stroke="#9E9BAA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                      Online Transactions</li>
+                      <li class="flex gap-2 text-[#9e9baa] sm:text-2xl text-base">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 12.5L4.5 10L9.5 15L19.5 5L22 7.5L9.5 20L2 12.5Z" stroke="#9E9BAA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                      Online Transactions</li>
+                      <li class="flex gap-2 text-[#9e9baa] sm:text-2xl text-base">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 12.5L4.5 10L9.5 15L19.5 5L22 7.5L9.5 20L2 12.5Z" stroke="#9E9BAA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                      Online Transactions</li>
+                  </ul>
+                </div>
+                <button
+                  class="flex items-center justify-center lg:justify-start lg:mx-1 mx-auto my-7 space-x-2 px-3 gap-1  bg-[#ff5771] text-white font-medium text-sm py-2  rounded-full hover:text-black hover:bg-[#ffeae9] hover:animate-bounce transition duration-200 shadow-md shadow-[#ff5771]">
+                  <span class="text-center">
+                    <a href="https://www.lipsum.com/">Choose Plan</a></span>   
+                </button>
+              </div>
+              <!-- 2  -->
+              <div class="shadow-md hover:shadow-2xl rounded sm:px-16 px-5 sm:py-8 py-5 mb-4 max-w-md space-y-4 mx-auto xl:mr-40 lg:mr-10  lg:ml-5">
+                <div class="flex justify-between">
+                  <h2 class="sm:text-4xl text-xl text-[#1e194d] font-semibold mb-2">Free</h2>
+                  <p class="text-[#1e194d] sm:text-xl text-base font-medium mb-6">Starter
+                    </p>
+  
+                </div>
+                
+                <div class="bg-white flex justify-center lg:justify-start">
+                 
+                  <ul class="space-y-3">
+                    <li class="flex gap-2 text-[#9e9baa] sm:text-2xl text-base">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 12.5L4.5 10L9.5 15L19.5 5L22 7.5L9.5 20L2 12.5Z" stroke="#9E9BAA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                      Online Transactions</li>
+                      <li class="flex gap-2 text-[#9e9baa] sm:text-2xl text-base">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 12.5L4.5 10L9.5 15L19.5 5L22 7.5L9.5 20L2 12.5Z" stroke="#9E9BAA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                      Online Transactions</li>
+                      <li class="flex gap-2 text-[#9e9baa] sm:text-2xl text-base">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 12.5L4.5 10L9.5 15L19.5 5L22 7.5L9.5 20L2 12.5Z" stroke="#9E9BAA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                      Online Transactions</li>
+                      <li class="flex gap-2 text-[#9e9baa] sm:text-2xl text-base">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 12.5L4.5 10L9.5 15L19.5 5L22 7.5L9.5 20L2 12.5Z" stroke="#9E9BAA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                      Online Transactions</li>
+                      <li class="flex gap-2 text-[#9e9baa] sm:text-2xl text-base">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 12.5L4.5 10L9.5 15L19.5 5L22 7.5L9.5 20L2 12.5Z" stroke="#9E9BAA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                      Online Transactions</li>
+                  </ul>
+                </div>
+                <button
+                  class="flex items-center justify-center lg:justify-start lg:mx-1 mx-auto my-7 space-x-2 px-3 gap-1  bg-[#ff5771] text-white font-medium text-sm py-2  rounded-full hover:text-black hover:bg-[#ffeae9] hover:animate-bounce transition duration-200 shadow-md shadow-[#ff5771]">
+                  <span class="text-center">
+                    <a href="https://www.lipsum.com/">Choose Plan</a></span>   
+                </button>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+      </section>
+    </main>
+    <footer class="bg-gradient-to-r from-[#08003b] via-[#08003b] to-[#08003b] py-12 px-10 poppins tracking-wide">
+        <div class="flex md:gap-8 sm:gap-3 gap-5 justify-between sm:flex-row flex-col">
+
+            <div
+                style="background-image: url(img/Ellipse\ 3.png); background-position:top-left; background-repeat: no-repeat; background-size:contain;">
+                <div class="space-y-2 max-w-lg py-5">
+                    <h4 class="text-white font-semibold md:text-4xl text-2xl lg:max-w-sm">Quotient is available
+                        for all devices</h4>
+                    <p class="text-[#9e9baa] md:text-xl text-lg lg:max-w-sm max-w-xl">
+                        Lorem ipsum dolor sit amet consectetur. Pulvinar nunc amet pretium pellentesque. Ornare in arcu
+                        elit
+                        quisque.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-2 justify-start">
+                        <!-- Google Play Button -->
+                        <div class="md:max-w-xl sm:max-w-md max-w-60">
+                            <a href="https://play.google.com/store" target="_blank"
+                                class="flex gap-2 items-center justify-center px-4 py-2 border text-white rounded-full hover:bg-pink-800">
+                                <div>
+                                    <i class="fa-brands fa-google-play  text-white"></i>
+                                </div>
+                                <div class="flex flex-col md:text-base text-base sm:text-sm justify-center items-center">
+
+                                    <div>Google Play</div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- App Store Button -->
+                        <div class="md:max-w-lg sm:max-w-md max-w-60">
+                            <a href="https://apps.apple.com" target="_blank"
+                                class="flex gap-2 items-center justify-center px-4  py-2 border text-white rounded-full hover:bg-pink-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 384 512"
+                                    fill="currentColor">
+                                    <path
+                                        d="M318.7 268c-.2-58.4 47.7-86.4 49.8-87.8-27.2-39.7-69.4-45-84.5-45-35.8-3.6-69.9 21-88.1 21-18.2 0-46.4-20.5-76.2-19.9-39 0-75.1 23-95.1 58-40.8 71.1-10.4 176 29.2 233.4 19.4 28.1 42.5 59.6 72.8 58.4 29.4-1.2 40.7-18.9 76.4-18.9 35.7 0 45.5 18.9 76.3 18.4 31.7-.5 51.7-28.8 70.9-57.1 22.4-32.7 31.7-64.5 32.1-66.2-.7-.3-62.2-23.8-62.5-94.6zM261.1 85.3c16.2-19.6 27.1-47 24.2-74.3-23.4.9-51.7 15.7-68.4 35.3-15 17.3-28.2 45.2-24.7 71.5 26.3 2 52.8-13.2 68.9-32.5z" />
+                                </svg>
+
+                                <div class="flex flex-col md:text-base text-base sm:text-sm justify-center items-center">
+
+                                    <div>App Store</div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="relative flex items-end justify-end">
+                    <img src="img/iPhone-13-Pro-Front.png" alt=""
+                        class="z-20 md:-mr-[50%] sm:-mr-[80%] lg:mb-0 sm:mb-10 -mr-10 mb-5">
+                    <div class="absolute top-24 -right-28">
+                        <img src="img/Polygon 5.png" alt="">
+                    </div>
+                </div>
+
+                <div>
+                    <img src="img/Polygon 4.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="flex justify-between xl:gap-32 gap-4 sm:flex-row flex-col mt-10 mb-3">
+            <div class="max-w-sm flex-1">
+                <h1 class="text-white font-semibold text-2xl">Blackrise Themes Inc</h1>
+                <p class="text-[#9e9baa] max-w-80">Lorem ipsum dolor sit amet consectetur. Pulvinar nunc amet pretium
+                    pellentesque.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:gap-1 lg:gap-4 gap-6  flex-1">
+
+                <div>
+                    <h4 class="text-white font-semibold text-lg mb-2">Home</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">Product</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"
+                                class="hover:text-white text-[#9e9baa] text-[15px]">Business</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"
+                                class="hover:text-white text-[#9e9baa] text-[15px]">Enterprise</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">Customer
+                                Success</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold text-lg mb-2">About Us</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">Company</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"
+                                class="hover:text-white text-[#9e9baa] text-[15px]">Leadership</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">Careers</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"
+                                class="hover:text-white text-[#9e9baa] text-[15px]">Diversity</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold text-lg mb-2">Resourcses</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">App
+                                Guide</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">Forum</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">Support</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">App
+                                Directory</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">Events</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold text-lg mb-2">Tutorial</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">10
+                                Leadership styles</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">Executive
+                                Summary Tips</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">What are
+                                OkRS</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">See all
+                                Guides</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="border border-[#fbbc05] my-1" />
+        <div class="my-3 sm:px-12 px-2 flex flex-wrap sm:justify-between gap-6 relative z-20">
+            <div class="flex space-x-5">
+                <a href="https://www.facebook.com" target="_blank"
+                    class="bg-white p-2 rounded-full hover:bg-black text-base transition-all">
+                    <svg width="14" height="14" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.88346 8.40201L9.32683 5.69878H6.55468V3.94457C6.55468 3.20502 6.94192 2.48414 8.18349 2.48414H9.44375V0.182627C9.44375 0.182627 8.3001 0 7.20664 0C4.92368 0 3.43144 1.29473 3.43144 3.63854V5.69878H0.893753V8.40201H3.43144V14.9369H6.55468V8.40201H8.88346Z"
+                            fill="#FBBC05" />
+                    </svg>
+                </a>
+                <a href="javascript:void(0)" target="_blank"
+                    class="bg-white p-2 rounded-full hover:bg-black text-base transition-all">
+                    <svg width="14" height="14" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.3567 2.42893C12.3649 2.53553 12.3649 2.64214 12.3649 2.74874C12.3649 6 9.72013 9.74622 4.88631 9.74622C3.39711 9.74622 2.0137 9.34264 0.850006 8.64217C1.06159 8.66499 1.26502 8.67261 1.48475 8.67261C2.71352 8.67261 3.84468 8.2843 4.74797 7.62186C3.59241 7.59901 2.62402 6.89089 2.29037 5.91626C2.45314 5.93909 2.61588 5.95432 2.78679 5.95432C3.02277 5.95432 3.25879 5.92385 3.47849 5.87058C2.27411 5.64213 1.3708 4.65229 1.3708 3.45686V3.42641C1.72071 3.60915 2.12763 3.72337 2.55889 3.73858C1.85091 3.29694 1.38708 2.54314 1.38708 1.69034C1.38708 1.2335 1.51726 0.814714 1.74513 0.449228C3.03903 1.94162 4.98396 2.91622 7.16484 3.02284C7.12416 2.8401 7.09974 2.64976 7.09974 2.4594C7.09974 1.10405 8.27158 0 9.72822 0C10.485 0 11.1686 0.296954 11.6487 0.776651C12.2428 0.670057 12.8124 0.464463 13.317 0.182743C13.1216 0.753823 12.7066 1.23352 12.1614 1.53807C12.6904 1.48479 13.203 1.34771 13.675 1.15737C13.317 1.64466 12.8694 2.07866 12.3567 2.42893Z"
+                            fill="#FBBC05" />
+                    </svg>
+
+                </a>
+                <a href="javascript:void(0)" target="_blank"
+                    class="bg-white p-2 rounded-full hover:bg-black text-base transition-all">
+                    <svg width="14" height="14" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.81449 11.9997H1.1556V3.98813H3.81449V11.9997ZM2.48361 2.89527C1.63339 2.89527 0.943756 2.23634 0.943756 1.4408C0.943756 1.05868 1.10599 0.692205 1.39477 0.422002C1.68355 0.151798 2.07522 0 2.48361 0C2.89201 0 3.28368 0.151798 3.57246 0.422002C3.86124 0.692205 4.02347 1.05868 4.02347 1.4408C4.02347 2.23634 3.33356 2.89527 2.48361 2.89527ZM13.7659 11.9997H11.1127V8.09973C11.1127 7.17027 11.0927 5.9783 9.73031 5.9783C8.3479 5.9783 8.13606 6.98813 8.13606 8.03277V11.9997H5.48003V3.98813H8.03014V5.08098H8.06736C8.42233 4.45152 9.28945 3.78723 10.5831 3.78723C13.2741 3.78723 13.7688 5.44527 13.7688 7.59884V11.9997H13.7659Z"
+                            fill="#FBBC05" />
+                    </svg>
+                </a>
+                <a href="javascript:void(0)" target="_blank"
+                    class="bg-white p-2 rounded-full hover:bg-black text-base transition-all">
+                    <svg width="14" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.45167 3.40982C6.32871 3.40982 4.61633 5.01206 4.61633 6.99845C4.61633 8.98485 6.32871 10.5871 8.45167 10.5871C10.5746 10.5871 12.287 8.98485 12.287 6.99845C12.287 5.01206 10.5746 3.40982 8.45167 3.40982ZM8.45167 9.33153C7.07976 9.33153 5.9582 8.28524 5.9582 6.99845C5.9582 5.71167 7.07642 4.66537 8.45167 4.66537C9.82692 4.66537 10.9451 5.71167 10.9451 6.99845C10.9451 8.28524 9.82358 9.33153 8.45167 9.33153ZM13.3385 3.26303C13.3385 3.7284 12.9379 4.10006 12.4439 4.10006C11.9465 4.10006 11.5493 3.72527 11.5493 3.26303C11.5493 2.80079 11.9499 2.42599 12.4439 2.42599C12.9379 2.42599 13.3385 2.80079 13.3385 3.26303ZM15.8787 4.11256C15.8219 2.99131 15.5482 1.99811 14.6703 1.17981C13.7958 0.361518 12.7343 0.10541 11.536 0.0491914C10.3009 -0.0163971 6.59909 -0.0163971 5.36404 0.0491914C4.16904 0.102287 3.10756 0.358394 2.22967 1.17669C1.35178 1.99498 1.08141 2.98818 1.02132 4.10943C0.951226 5.26504 0.951226 8.72874 1.02132 9.88435C1.07807 11.0056 1.35178 11.9988 2.22967 12.8171C3.10756 13.6354 4.1657 13.8915 5.36404 13.9477C6.59909 14.0133 10.3009 14.0133 11.536 13.9477C12.7343 13.8946 13.7958 13.6385 14.6703 12.8171C15.5449 11.9988 15.8186 11.0056 15.8787 9.88435C15.9488 8.72874 15.9488 5.26816 15.8787 4.11256ZM14.2831 11.1243C14.0228 11.7364 13.5187 12.2081 12.8611 12.4548C11.8764 12.8202 9.53985 12.7359 8.45167 12.7359C7.36349 12.7359 5.02356 12.8171 4.0422 12.4548C3.38795 12.2112 2.88392 11.7396 2.62022 11.1243C2.22967 10.2029 2.3198 8.01663 2.3198 6.99845C2.3198 5.98027 2.23301 3.79086 2.62022 2.87262C2.88058 2.26046 3.38461 1.78885 4.0422 1.54211C5.0269 1.17669 7.36349 1.26102 8.45167 1.26102C9.53985 1.26102 11.8798 1.17981 12.8611 1.54211C13.5154 1.78573 14.0194 2.25734 14.2831 2.87262C14.6737 3.79398 14.5835 5.98027 14.5835 6.99845C14.5835 8.01663 14.6737 10.206 14.2831 11.1243Z"
+                            fill="#FBBC05" />
+                    </svg>
+
+                </a>
+            </div>
+            <div class="flex gap-9 justify-center items-center">
+                <p class='text-[#848487] text-sm'>Term & Conditions</p>
+                <p class='text-[#848487] text-sm'>Privacy Policy
+                </p>
+                <p class='text-[#848487] text-sm'>Cookies</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- nav js  -->
+    <script src="nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>
+
+</html>
